@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="green">
+    <ion-title>
+      App Sonidos de animales
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--vista en formato de lista con una imagen al lado-->
+  <ion-list>
+    <ion-item *ngFor="let animal of animales">
+      <ion-avatar item-left>
+        <img [src]="animal.imagen">
+      </ion-avatar>
+      <h2>&nbsp;{{animal.nombre}}</h2>
+    </ion-item>
+  </ion-list>ñ-  
+</ion-content>
